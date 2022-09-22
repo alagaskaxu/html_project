@@ -1,0 +1,130 @@
+ *{margin: 0;
+	padding: 0;
+ }
+ .select{
+	 width: 1400px;
+	 height: 550px ;
+	 margin: 5px auto;
+	 position: relative;
+	 justify-content: center;
+ }
+ .first{
+	 width: 1400px ;height: 250px ;
+	 background: transparent;
+	 margin: 5px auto;
+	 background-image: url(../img/index/yt1.png);
+	 background-size: 1400px 250px;
+	 background-repeat: no-repeat;
+	 justify-content: center;
+	 box-shadow: 10px 10px 20px dimgray;
+ }
+ .second{
+	 width: 300px ;height: 500px ;
+	 margin: 20px 80px ;
+	 float: left;
+ }
+ .three{
+	 	 width: 300px ;height: 500px ;
+		 margin: 20px 80px ;
+		 float: left;
+ }
+ .four{
+	 	 width: 300px ;height: 500px ;
+		 margin: 20px 80px ;
+		 float: left;
+ }
+ .five{
+	 width: auto ;height: 5px ;
+	 background: gray;
+	 margin: 5px auto;
+	 clear: left;
+ }
+ .six{
+	 width: auto;
+	 height: 50px;
+	 margin: 10px auto;
+	 background: linear-gradient(160deg,rgb(0, 85, 255),rgb(87, 225, 255));
+	 text-align: center;
+	 font-family: 隶书;
+	 font-size: 40px ;
+	 color: seashell;
+ }
+ .middle{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: column;
+ }
+ .wrap{
+ 	width: 300px ;
+ 	height: 500px ;
+ 	position: relative;
+	opacity: 0.9;
+ }
+ .wrap h2{
+ 	font-size: 40px ;
+ 	margin-bottom: 30px ;
+ }
+ .front, .back{
+ 	width: 100%;
+ 	height: 100%;
+ 	position: absolute;
+ 	background-size: cover;
+ 	backface-visibility: hidden;
+ 	box-shadow: 0px 0px 20px dimgray;
+ 	transition: .8s;
+ }
+ .front{
+ 	transform:perspective(800px ) rotateY(0deg);
+ }
+ .back{
+ 	transform:perspective(800px) rotateY(180deg);
+ }
+ .back .contact-info a {
+ 	display: inline-flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	width: 220px ;
+ 	height: 100px ;
+	margin: 5px 50px ;
+ 	text-decoration: none;
+ 	color: rgb(67, 67, 67);
+ 	font-size: 30px ;
+ }
+ .back .contact-info a:hover {
+ 	color: white;
+ 	background-color: gray;
+ 	border-radius: 20px 20px;
+ }
+ .wrap:hover .front{
+ 	transform:perspective(800px ) rotateY(-180deg);
+ }
+ .wrap:hover .back{
+ 	transform:perspective(800px ) rotateY(0deg);
+ }
+ .fiex1{
+	 top: 230px ;
+	 left: 2px ;
+	 position: fixed;
+	 width: 125px ;
+	 height: 250px ;
+	 background-image: url(../img/index/zcl.jpg);
+	 background-size: 140px 250px;
+	 opacity: 0.85;
+ }
+ .fiex2{
+	 top: 230px ;
+	 right: 2px;
+	 position: fixed;
+	 width: 125px ;
+	 height: 250px ;
+	 background-image: url(../img/index/wy.jpg);
+	 background-size: 135px 250px;
+	 opacity: 0.85;
+ }
+ .fiex1:hover{
+	 opacity: 1;
+ } 
+ .fiex2:hover{
+	 opacity: 1;
+ }
